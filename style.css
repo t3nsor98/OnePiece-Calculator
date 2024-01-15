@@ -1,0 +1,120 @@
+/* adding default 0 padding and 0 margin. user select none so that nothing can be selected by mistake for better UI */
+*,
+body,
+html {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    user-select: none;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 600;
+}
+
+main {
+    width: 100vw;
+    height: 100vh;
+    /* background-color: rgb(46, 3, 69); */
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    /* video */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    text-align: center;
+}
+
+video {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: -1;
+    opacity: 0.6;
+}
+
+#calculator-box {
+    height: 100vh;
+    width: 100vw;
+}
+
+h1 {
+    text-align: center;
+    border-radius: 5px;
+}
+
+.btn {
+    font-size: 1.5rem;
+    padding: .7rem;
+    margin: .3rem;
+    width: 4.5rem;
+    border-radius: 10px;
+    border: none;
+    transition-property: box-shadow;
+    transition-duration: .4s;
+}
+
+.btn:hover,
+btn:active {
+    box-shadow: 5px 10px 10px white;
+}
+
+.big {
+    width: 10.2rem;
+}
+
+.operation-display {
+    height: 3.5rem;
+    font-size: 2rem;
+    text-align: right;
+    padding-right: 1rem;
+    width: 95%;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+.display {
+    text-align: right;
+    font-size: 2rem;
+    width: 95%;
+    /* background-color: rgb(85, 26, 141); */
+    height: 3rem;
+    line-height: 3rem;
+    padding-right: 1rem;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+/* .num {
+    background-color: chartreuse;
+} */
+
+/* .operator {
+    background-color: rgb(244, 7, 133);
+} */
+
+/* .func {
+    background-color: brown;
+} */
+
+/* #equal-to {
+    background-color: aqua;
+
+} */
+
+.dark {
+    color: white;
+    background-color: black;
+}
+
+.light {
+    color: black;
+    background-color: white;
+}

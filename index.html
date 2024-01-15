@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="manifest" href="/manifest.json">
+    <title>A simple calculator by t3nsor</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- main section -->
+    <video id="my-video" autoplay muted loop>
+      <source src="./luffy.webm" type="video/webm" />
+      Your browser does not support the video tag.
+    </video>
+    <main id="calculator-box">
+      <!-- display section -->
+      <h1 class="heading">OnePiece Calculator</h1>
+      <div class="operation-display light" id="operation-display"></div>
+      <div class="display light" id="display"></div>
+      <!-- first row -->
+      <section class="first-row row">
+        <button class="btn func" id="percentage">%</button>
+        <button class="btn func" id="clear-entry">CE</button>
+        <button class="btn func" id="clear">C</button>
+        <button class="btn func" id="backspace"><=</button>
+      </section>
+      <!-- second row -->
+      <section class="second-row row">
+        <button class="btn func" id="onebyx">1/x</button>
+        <button class="btn func" id="square">x^2</button>
+        <button class="btn func" id="sqrt">sqrt</button>
+        <button class="btn operator" data-value="+">+</button>
+      </section>
+      <!-- third row -->
+      <section class="third-row row">
+        <button class="btn num" data-value="7">7</button>
+        <button class="btn num" data-value="8">8</button>
+        <button class="btn num" data-value="9">9</button>
+        <button class="btn operator" data-value="-">-</button>
+      </section>
+      <!-- fourth row -->
+      <section class="fourth-row row">
+        <button class="btn num" data-value="4">4</button>
+        <button class="btn num" data-value="5">5</button>
+        <button class="btn num" data-value="6">6</button>
+        <button class="btn operator" data-value="*">*</button>
+      </section>
+      <!-- fifth row -->
+      <section class="fifth-row row">
+        <button class="btn num" data-value="1">1</button>
+        <button class="btn num" data-value="2">2</button>
+        <button class="btn num" data-value="3">3</button>
+        <button class="btn operator" data-value="/">/</button>
+      </section>
+      <!-- sixth row -->
+      <section class="sixth-row row">
+        <button class="btn func" id="plus-minus">±</button>
+        <button class="btn num" data-value="0">0</button>
+        <button class="btn func" id="decimal-point" data-value=".">.</button>
+        <button class="btn" id="equal-to" data-value="=">=</button>
+      </section>
+      <!-- seventh row -->
+      <section class="seventh-row row">
+        <button class="btn big" id="toggle-color-mode">dark mode</button>
+        <button class="btn big" id="toggle-theme">theme</button>
+      </section>
+    </main>
+
+    <script src="index.js"></script>
+  </body>
+</html>

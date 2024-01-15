@@ -1,0 +1,25 @@
+{
+  "name": "OnePiece Calculator",
+  "short_name": "OP Calculator",
+  "description": "A calculator inspired by One Piece and built for CodSoft Web Development Internship built by Digbijaya Lenka",
+  "version": "1.0",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#0077cc",
+  "icons": [
+    {
+      "src": "/luffy_logo.jpg",
+      "sizes": "192x192",
+      "type": "image/jpg"
+    },
+    {
+      "src": "/luffy_logo.jpg",
+      "sizes": "512x512",
+      "type": "image/jpg"
+    }
+  ],
+  "permissions": [
+    "storage"
+  ]
+}
